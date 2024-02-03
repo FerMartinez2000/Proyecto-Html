@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Preguntas y Sugerencias</title>
+</head>
+<body>
+    <header>
+        <h1>Preguntas y Sugerencias</h1>
+    </header>
+
+    <section>
+        <h2>¿Tienes alguna pregunta o sugerencia? ¡Déjanos saber!</h2>
+        <form action="procesar_formulario.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="pregunta_sugerencia">Pregunta o Sugerencia:</label>
+            <textarea id="pregunta_sugerencia" name="pregunta_sugerencia" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
